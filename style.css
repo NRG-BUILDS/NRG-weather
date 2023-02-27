@@ -1,0 +1,107 @@
+body {
+    font-size: 15px;
+    margin: 0;
+    background: url('sunny_bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+* { 
+    box-sizing: border-box;
+}
+.current_weather_display { 
+    height: 60vh;
+    text-align: center;
+    padding: 15%;
+    color: white;
+}
+.current_city_name { 
+    font-size: 2rem;
+    font-weight: 400;
+}
+.current_city_temp { 
+    font-size: 5rem;
+    font-weight: 450;
+}
+.current_city_desc { 
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+.current_city_coords { 
+    font-size: 1rem;
+    font-weight: 300;
+}
+.search_bar { 
+    margin-top: 30px;
+}
+.search_bar input { 
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    background: transparent;
+    border: none;
+    border-bottom: 1.2px solid white;
+    color: white;
+    outline: none;
+}
+.search_bar button { 
+    margin-top: 15px;
+    padding: 0%;
+    background: transparent;
+    border: none;
+    color: white;
+}
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+:-ms-input-placeholder {
+    color: white;
+}
+::-ms-input-placeholder {
+    color: white;
+}
+.forecast_tray_container { 
+    color: white;
+    /*height:40vh;*/
+    padding: 5% 5%;
+    border-radius: 30px 30px 0 0;
+    background: linear-gradient(to bottom, rgba(51, 204, 51, 0.4), rgba(255, 0, 102, 0.1));
+    backdrop-filter: blur(8px);
+}
+
+.forecast_tray_container h1 { 
+    margin: 0;
+    font-size: 1.3rem;
+}
+.forecast_tray_container h1 span { 
+    color: coral;
+    float: right;
+}
+.forecast_tray { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 30px auto;
+    overflow: scroll;
+}
+.forecast_tray>div { 
+    text-align: center;
+    width: 70px;
+    padding: 30px 10px;
+    margin: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+    border: .5px solid white;
+    border-radius: 30px;
+}
+.forecast_tray>div>span { 
+    display: block;
+    margin: 5px auto;
+}
+.weather-sm { 
+    display: block;
+    height: 50px;
+    width: 50px;
+}

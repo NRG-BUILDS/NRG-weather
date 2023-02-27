@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Weather by NRG</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="current_weather_display">
+        <div class="current_weather">
+            <div>
+                <span class="current_city_name">Loading...<span>
+            </div>
+            <div>
+                <span class="current_city_temp">...°</span>
+            </div>
+            <div>
+                <span class="current_city_desc">Check internet and reload</span>
+            </div>
+            <div class="highlow_temp">
+            <span>H:24°</span> 
+            <span>L:16°</span>
+            </div>
+          <div class="search_bar">
+              <input type="text" id="city_input" placeholder="Weather... Anywhere On Earth">
+              <button onclick="searchWeather()">Search</button>
+          </div>  
+        </div>
+  </section>
+    
+  
+  <section class="forecast_tray_container">
+      <div>
+          <h1>NRG Weather<span>Daily Forecast</span></h1>
+      </div>
+      <div class="forecast_tray">
+          <!--<div>
+              <span>10AM</span>
+              <i class="">#</i>
+              <span>25%</span>
+              <span>90°</span>
+          </div>
+          <div>
+              <span>10AM</span>
+              <i class="">#</i>
+              <span>25%</span>
+              <span>90°</span>
+          </div>
+          <div>
+              <span>10AM</span>
+              <i class="">#</i>
+              <span>25%</span>
+              <span>90°</span>
+          </div>
+          <div>
+              <span>10AM</span>
+              <i class="">#</i>
+              <span>25%</span>
+              <span>90°</span>
+          </div>
+          <div>
+              <span>10AM</span>
+              <i class="">#</i>
+              <span>25%</span>
+              <span>90°</span>
+          </div>
+          
+      </div>-->
+      <p>
+          Enter a city
+      </p>  
+  </section>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
