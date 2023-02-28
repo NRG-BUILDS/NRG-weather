@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
   <title>Weather by NRG</title>
   
@@ -20,20 +22,24 @@
             <div>
                 <span class="current_city_name">Loading...<span>
             </div>
+            
             <div>
                 <span class="current_city_temp">...°</span>
             </div>
             <div>
-                <span class="current_city_desc">Check internet and reload</span>
+                <span class="current_city_desc">Check connection</span>
             </div>
             <div class="highlow_temp">
             <span>H:24°</span> 
             <span>L:16°</span>
             </div>
-          <div class="search_bar">
-              <input type="text" id="city_input" placeholder="Weather... Anywhere On Earth">
-              <button onclick="searchWeather()">Search</button>
-          </div>  
+            
+        </div>
+        <div class="search_bar">
+            <span class="error_message"></span>
+            <input type="text" id="city_input" placeholder="Get Weather... Anywhere On Earth">
+            <button onclick="searchWeather()">Search</button>
+            
         </div>
   </section>
     
@@ -43,7 +49,7 @@
           <h1>NRG Weather<span>Daily Forecast</span></h1>
       </div>
       <div class="forecast_tray">
-          <!--<div>
+          <div>
               <span>10AM</span>
               <i class="">#</i>
               <span>25%</span>
@@ -74,10 +80,56 @@
               <span>90°</span>
           </div>
           
-      </div>-->
+      </div>
       <p>
           Enter a city
       </p>  
+  </section>
+  <section class="extra_section">
+      <div class="daily_forecast card">
+          <div>
+              <span>10AM</span>
+              <i class="">#</i>
+              <span>25%</span>
+              <span>90°</span>
+          </div>
+          <div>
+              <span>10AM</span>
+              <i class="">#</i>
+              <span>25%</span>
+              <span>90°</span>
+          </div>
+          <div>
+              <span>10AM</span>
+              <i class="">#</i>
+              <span>25%</span>
+              <span>90°</span>
+          </div>
+      </div>
+      <div class="extra_grid">
+          <div class="card humidity">
+              <span class="extra_heading">HUMIDITY</span>
+              <span class="material-symbols-outlined">humidity_percentage</span><br>
+              <span class="stat_number hum_display">68</span><span>%</span>
+          </div>
+          <div class="card wind">
+              <span class="extra_heading">WIND SPEED</span>
+              <span class="material-symbols-outlined">air</span><br>
+              <span class="stat_number wind_display">68</span><span>km/h</span>
+              
+          </div>
+          <div class="card rainfall">
+              <span class="extra_heading">RAINFALL</span>
+              <span class="material-symbols-outlined">rainy</span><br>
+              <span class="stat_number rain_display">68</span><span>% chance</span>
+          </div>
+          <div class="card uv">
+              <span class="extra_heading">VISIBILITY</span>
+              <span class="material-symbols-outlined">visibility</span><br>
+              <span class="stat_number visi_display">68</span><span>km</span>
+              
+          </div>
+      </div>
   </section>
   <!-- Project -->
   <script src="main.js"></script>
