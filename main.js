@@ -16,6 +16,14 @@ const options = {
 		'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
 	}
 };
+window.addEventListener("load", () => { 
+    let date = new Date();
+    if (date.getHours() < 18) { 
+        document.body.style.background = "url('sunny_bg.jpg')"
+    } else { 
+        document.body.style.background = "url('cloudy_bg.jpg')"
+    }
+})
 searchWeather = (city) => { 
     if (cityInput.value == "") { 
         showError("Type in a location")
@@ -70,7 +78,6 @@ displayWeeklyForecast = (a) => {
         
     }
     dailyForecastDisplay.innerHTML = text;
-    console.log("i work too" + days.length)
 }
 
 displayExtraInfo = (a) => { 
@@ -78,7 +85,6 @@ displayExtraInfo = (a) => {
     windDisplay.innerHTML = a.current.wind_kph;
     visiDisplay.innerHTML = a.current.vis_km;
     rainDisplay.innerHTML = a.forecast.forecastday[0].day.daily_chance_of_rain;
-    console.log("i work")
 }
 showError = message => { 
     document.querySelector('.error_message').innerHTML = message;

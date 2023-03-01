@@ -17,7 +17,8 @@
 </head>
 
 <body>
-  <section class="current_weather_display">
+<div class="scrollContainer">    
+  <section class="current_weather_display scrollDisplay">
         <div class="current_weather">
             <div>
                 <span class="current_city_name">Loading...<span>
@@ -46,7 +47,7 @@
   
   <section class="forecast_tray_container">
       <div>
-          <h1>NRG Weather<span>Daily Forecast</span></h1>
+          <h1>NRG Weather<span>Hourly Forecast</span></h1>
       </div>
       <div class="forecast_tray">
           <div>
@@ -79,13 +80,13 @@
               <span>25%</span>
               <span>90°</span>
           </div>
-          
       </div>
-      <p>
-          Enter a city
-      </p>  
+      <p>Swipe Down For More Info
+      <br>
+      <span class="material-symbols-outlined">expand_more</span></p>
   </section>
-  <section class="extra_section">
+  
+  <section class="extra_section scrollDisplay">
       <div class="daily_forecast card">
           <div>
               <span>10AM</span>
@@ -130,8 +131,14 @@
               
           </div>
       </div>
+      <footer>
+          <p>Built with ❤️ from NRG</p>
+          <p>⚡ by weatherAPI.com</p>
+      </footer>
   </section>
+</div>  
   <!-- Project -->
   <script src="main.js"></script>
+  
 </body>
 </html>
